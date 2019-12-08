@@ -7,9 +7,9 @@ import tech.devdiaries.msscbeerservice.web.model.BeerDto;
 
 import java.util.UUID;
 
-@RequestMapping(".api/v1/beer")
+@RequestMapping("/api/v1/beer")
 @RestController
-public class BeerService {
+public class BeerController {
 
     @GetMapping({"/{beerId}"})
     public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId")UUID beerId) {
